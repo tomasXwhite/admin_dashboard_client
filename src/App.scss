@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+$light: #ffffff;
+
+.flex {
+    display: flex;
+}
+
+.content {
+    width: 100%;
+}
+
+
+.navbar {
+
+    background-color: $light;
+    padding: 1rem 2rem;
+    border-bottom: 4px solid grey;
+}
+
+.sidebar {
+    width: 14rem;
+    height: calc(100vh - 52px);
+    border-right: 1px solid grey;
+
+    ul {
+        list-style: none;
+        padding: 1rem 2rem;
+
+        li {
+            margin-bottom: 1rem;
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}

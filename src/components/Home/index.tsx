@@ -1,4 +1,4 @@
-import React from "react"
+import "../../App.scss"
 
 
 export default function Home() {
@@ -7,7 +7,7 @@ export default function Home() {
     return (
         <div className="container">
 
-            <p className="title">
+            <p >
                 Welcome to home, admin.
             </p>
 
