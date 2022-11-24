@@ -13,19 +13,19 @@ function App() {
 
   return (
     <div >
-      <Route path="/" component={Navbar} />
       <div className="flex">
-        <Route path="/" component={Sidebar} />
-        <div className="content">
-          <Route exact path="home" component={Home} />
-          <Route exact path="option1" component={Option1} />
-          <Route exact path="option2" component={Option2} />
+        <Route path='/' component={Sidebar} />
+        <div className="content w-100">
+          <Route path='/' component={Navbar} />
+          <Route exact path='/home' component={Home} />
+          <Route exact path='/option1' component={Option1} />
+          <Route exact path='/option2' component={Option2} />
 
         </div>
       </div>
 
 
-      <Route exact path='/' component={Home} />
+      {/* <Route exact path='/' component={Home} /> */}
     </div>
   )
 }

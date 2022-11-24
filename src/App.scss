@@ -8,27 +8,25 @@
 
 
 $light: #ffffff;
+$lowGrey: #dcdcdc;
 
 .flex {
     display: flex;
 }
 
-.content {
-    width: 100%;
-}
 
 
 .navbar {
 
     background-color: $light;
     padding: 1rem 2rem;
-    border-bottom: 4px solid grey;
+    border-bottom: 4px solid $lowGrey;
 }
 
 .sidebar {
     width: 14rem;
     height: calc(100vh - 52px);
-    border-right: 1px solid grey;
+    border-right: 1px solid $lowGrey;
 
     ul {
         list-style: none;
@@ -39,6 +37,10 @@ $light: #ffffff;
 
             a {
                 text-decoration: none;
+
+                &.active {
+                    background-color: $lowGrey;
+                }
             }
         }
     }
